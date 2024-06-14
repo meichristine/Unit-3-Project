@@ -1,0 +1,118 @@
+/* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
+
+
+.option-one-screen, 
+.option-two-screen, 
+.option-one-end,
+.option-three-end,
+.option-two-end  {
+   display:none;
+}
+
+
+/* Feel free to change any of the styling below!*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body with a background color or image if desired */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    width: 550px;
+    border: 5px solid black;
+}
+
+/* Style the title of your story */
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #BD5151;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Style the story opening container */
+.story-opening {
+    background-color: #BD5151;
+    border: 1px solid #BD5151;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the story image */
+.story-opening img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Style the story opening message */
+.story-opening h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Style the buttons container */
+.buttons {
+    margin: 20px;
+}
+
+/* Style the option buttons */
+button {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: black;
+    color: #BD5151;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8694a4;
+}
+
+/* Style the screens for option one and option two */
+.option-one-screen,
+.option-two-screen,
+.option-three-end,
+.option-one-end,
+.option-two-end {
+    background-color: #BD5151;
+    border: 1px solid #BD5151;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Style the images in the screens */
+.option-one-screen img,
+.option-two-screen img,
+.option-one-end img,
+.option-two-end img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Style the text in the screens */
+.option-one-screen h1,
+.option-two-screen h1,
+.option-one-end h1,
+.option-two-end h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
